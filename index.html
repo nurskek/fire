@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MySite</title>
+
+    <style>
+
+        body {
+            font-family: 'Bebas Neue', sans-serif;
+            display: flex;
+            align-items: center;
+            justify-content:center;
+            height: 95vh;
+            width: 100%;
+            background-color: #151b29;
+            
+        }
+        
+        #head {
+            margin-top: 5%
+        }
+        
+        h1 {
+            color: #e9fa86;
+            font-size: 3em;
+        }
+        #container {
+            border-radius: 5%;
+            padding: 0% 5% ;
+            width: 60%;
+            height: 80%;
+            background-image: url(https://images.unsplash.com/photo-1468657988500-aca2be09f4c6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80);
+            background-size: cover;
+            display: flex;
+            flex-wrap: nowrap;
+            flex-direction: column;
+            justify-content: space-between;
+            overflow-y: scroll;
+        }
+
+        #butSection {
+            justify-self: flex-end;
+        }
+
+        #mainSection {
+            align-self: center;
+            width: 80%;
+            flex-wrap: nowrap;
+        }
+
+        button {
+            font-family: 'Bebas Neue', sans-serif;
+            background: none;
+            display: inline;
+            align-items: center;
+            justify-content:center;
+            color: white;
+            border: 1px solid;
+            border-radius:15%;
+            padding: 0.5em;
+            margin: 2% auto;
+            font-size: 1.5em;
+            font-weight: bold;
+            transition: all 0.25s;
+        }
+
+        .sign {
+            font-family: 'Bebas Neue', sans-serif;
+            background: none;
+            display: inline;
+            /* align-items: center; */
+            /* justify-content:center; */
+            color: 	#86affa;
+            border: 1px solid;
+            border-radius: 5%;
+            padding: 1%;
+            margin: 5%;
+            font-size: 0.7em;
+            font-weight: bold;
+            transition: all 0.25s;
+        }
+
+        button:hover {
+            border-color: #f1ff5c;
+            color: white;
+            box-shadow: 0em 0.5em 0.5em -0.5em #f1ff5c;
+            transform: translateY(-0.25em);
+            cursor: pointer;
+        }
+
+    </style>
+</head>
+<body style="text-align:center">
+    <div id="container">
+        <div id="head">
+            <h1 >Welcome, my Guest!</h1>
+        </div>
+
+        <div id="mainSection">
+            <button class="mainBut" id="td">To-do list</button>
+            <script type="text/javascript">
+                document.getElementById("td").onclick = function () {
+                    location.href = "todo.html";
+                };
+            </script>
+
+            <button class="mainBut" id="gl">Gallery</button>
+            <script type="text/javascript">
+                document.getElementById("gl").onclick = function () {
+                    location.href = "gallery.html";
+                };
+            </script>
+
+            <button class="mainBut" id="sc">Scorekeeper</button>
+            <script type="text/javascript">
+                document.getElementById("sc").onclick = function () {
+                    location.href = "score.html";
+                };
+            </script>
+        </div>
+
+        <div id="butSection">
+            <button class="sign" id="up">Sign Up</button>
+            <script type="text/javascript">
+                document.getElementById("up").onclick = function () {
+                    location.href = "sign-up.html";
+                };
+            </script>
+
+            <button class="sign" id="in">Sign In</button>
+            <script type="text/javascript">
+                document.getElementById("in").onclick = function () {
+                    location.href = "sign-in.html";
+                };
+            </script>
+        </div>
+        
+    </div>
+</body>
+</html>
+
+<!-- score keeper
+    crowsmuseum
+    todolist -->

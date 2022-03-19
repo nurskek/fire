@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="design/signin.css">
+    <title>Sign in page</title>
+    <style>
+        /* body {
+            background-color: rgb(128,128,128);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        /* why not working? */
+        /* .phDiv {
+            display: none;
+        } */
+    </style>
+</head>
+<body>
+    <div>
+        <form formaction="button">
+            <h2>Sign in</h2>
+            <input class="input-group input-group-outline mb-3" name="e" id="email" type="email" placeholder="Email">
+            <input class="input-group input-group-outline mb-3" name="p" id="password" type="password" placeholder="Password">
+            <button  id="signInBut" type="button">Sign In</button>
+        </form>
+
+        <button class="btn" id="googleButton">Google+</button>
+        <button  class="btn" id="phoneButton">Phone Sign In</button>
+    </div>
+
+    <div class="phDiv" id="phoneDiv">
+        <div  id="phoneForm">
+            <h2>Sign in with Phone Number</h2>
+            <input type="text" id="phoneNum" name="yeah" placeholder="Phone Number">
+            <button id="signInPhone" >Send Code</button>
+            <p>You might receive an SMS message for verification.</p>
+            <div id="recaptcha-csontainer" style="display: inline-block"></div>
+                       
+        </div>
+
+        <div id="ver">
+            <input type="text" placeholder="Verification Code" name="nah" id="verificationCode">
+            <button id="btnVerify">Verify</button>
+        </div>  
+    </div>
+    
+    
+    <button id="back">Back</button>
+    <script type="text/javascript">
+        document.getElementById("back").onclick = function () {
+            location.href = "index.html";
+        };
+    </script>
+
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-firestore.js"></script>
+
+    <script src="js/signin.js"></script>
+</body>
+</html>

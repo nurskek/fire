@@ -1,0 +1,69 @@
+body {
+    background-color: #F0FFFF;
+    font-family: "Shizuru", sans-serif;
+}
+
+.secondSec h2 {
+    color:#CC0033
+}
+/* .nav-item {
+    color: black;
+} */
+
+.blurb p {
+    color: grey;
+}
+
+.father {
+    margin-bottom: 100px;
+}
+.content {
+    margin-bottom: 100px;
+}
+
+#mainNavbar .navbar-brand {
+    color: black;
+    font-size: 1.8rem;
+    font-weight: bold;
+    /* margin-bottom: 5px; */
+    
+}
+
+#mainNavbar {
+    color: black;
+    font-size: 1.2rem;
+    font-weight: 100;
+}
+
+#mainNavbar .nav-link {
+    color: black;
+}
+
+#mainNavbar .nav-link:hover {
+    color: #CC0033;
+    transform: all 50ms ease-in-out;
+    font-size: 1.3rem;
+}
+
+span {
+    color: #CC0033;
+}
+
+#sevlines #h {
+    color: black;
+    font-weight: 100;
+    font-size: 7rem;
+}
+
+@media (max-width: 1200px) {
+    #sevlines h2 {
+        font-weight: 100;
+        font-size: 3rem;
+    }
+}
+
+.navbar.scrolled {
+    background-color: grey;
+    transition: background-color 1s ease-in-out;
+}
+

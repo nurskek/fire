@@ -1,0 +1,68 @@
+body {
+    font-family: 'Bebas Neue', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content:center;
+    height: 95vh;
+    background-color: #151b29;
+}
+
+h2 {
+    color: white;
+}
+
+div {
+    background-color: #9786fa;
+    border-radius: 5%;
+    padding: 50px;
+    border: 1px solid black;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 0px 10px 0px #73abeb;
+}
+button {
+    border-radius: 15%;
+    border: 1px solid white;
+    color: white;
+    margin: 10px;
+    width:60px; 
+    height: 50px;
+    align-items: center;
+    background: none;
+    padding: 5px;
+
+}
+
+.btn {
+    align-content: center;
+    width: 100px;
+}
+
+.btn:hover {
+    background-color: #151b29;
+}
+
+#phoneForm {
+    padding: 10px;
+    padding-top: none;
+    margin-top: none;
+}
+
+button:hover {
+    background-color: #9786fa;
+}
+
+#ver {
+    margin: 10px;
+    height: 10%;
+    
+}
+
+#phoneDiv {
+    border: none;
+    display: none;
+    margin: 5px;
+    border-radius: 5%;
+    flex-direction: column;
+}

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="design/scoreDesign.css">
+    <title>Document</title>
+</head>
+<body>
+    <section id="section">
+        <div class="imgClass">
+            <img src="https://images.unsplash.com/photo-1612872087720-bb876e2e67d1?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1307&q=80" 
+                alt="people playing volleyball">
+        </div>
+        <div class="main">
+                <h2>Volleyball Score Keeper</h2>
+                <h1 class="score"><span>0</span> to <span>0</span></h1>
+                <p>Use the buttons below to keep score.</p>
+                <label for="scoreMax">Playing till</label>
+                <input type="number" name="num" id="scoreMax">  
+        </div>
+        <div class="buttons"> 
+            <button type="button" class="b" id="left">+1 team Left</button>
+            <button type="button" class="b" id="right">+1 team Right</button>
+            <button type="button" id="reset" class="b">Reset</button>
+        </div>
+    </section>
+
+    <div>
+        <button id="back">Back</button>
+        <script type="text/javascript">
+            document.getElementById("back").onclick = function () {
+                location.href = "index.html";
+            };
+        </script>
+    </div>
+    <script src="js/score.js"></script>
+</body>
+</html>
